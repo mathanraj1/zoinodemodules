@@ -290,76 +290,51 @@ export default GridExample;
 ```
 `Property`
 
-Name	Type	Default	Description
-children	node		
-The content of the component.
-classes	object		
-columns	Array<number>
-| number
-| object	12	
-The number of columns.
-columnSpacing	Array<number
-| string>
-| number
-| object
-| string		
+Name|	Type	|Default	|Description
+--- | --- | --- | ---
+`children`|	node	||The content of the component.
+`classes`|	object||		
+`columns`|	Array<number>, number, object	12||	The number of columns.
+`columnSpacing`|	Array<number string>number object string	||	
 Defines the horizontal space between the type item components. It overrides the value of the spacing prop.
 component	elementType		
-container	bool	false	
+`container`|	bool|	false	|
 If true, the component will have the flex container behavior. You should be wrapping items with a container.
-direction	'column-reverse'
-| 'column'
-| 'row-reverse'
-| 'row'
-| Array<'column-reverse'
-| 'column'
-| 'row-reverse'
-| 'row'>
-| object	'row'	
+`direction`|	'column-reverse'
+, 'column'
+, 'row-reverse'
+, 'row'
+, Array<'column-reverse'
+, 'column'
+, 'row-reverse'
+, 'row'>
+, object	'row'	|
 Defines the flex-direction style property. It is applied for all screen sizes.
-item	bool	false	
-lg	'auto'
-| number
-| bool	false	
+`item`|	bool|	false	| |
+`lg`|	'auto'
+, number
+, bool|	false	|
 If a number, it sets the number of columns the grid item uses. It can't be greater than the total number of columns of the container (12 by default). If 'auto', the grid item's width matches its content. If false, the prop is ignored. If true, the grid item's width grows to use the space available in the grid container. The value is applied for the lg breakpoint and wider screens if not overridden.
-md	'auto'
-| number
-| bool	false	
+`md`|	'auto'
+, number
+, bool|	false	|
 If a number, it sets the number of columns the grid item uses. It can't be greater than the total number of columns of the container (12 by default). If 'auto', the grid item's width matches its content. If false, the prop is ignored. If true, the grid item's width grows to use the space available in the grid container. The value is applied for the md breakpoint and wider screens if not overridden.
-rowSpacing	Array<number
-| string>
-| number
-| object
-| string		
+`rowSpacing`|	Array<number
+, string>
+, number
+, object
+, string	|	
 Defines the vertical space between the type item components. It overrides the value of the spacing prop.
-sm	'auto'
-| number
-| bool	false	
+`sm`|	'auto'
+, number
+, bool|	false	|
 If a number, it sets the number of columns the grid item uses. It can't be greater than the total number of columns of the container (12 by default). If 'auto', the grid item's width matches its content. If false, the prop is ignored. If true, the grid item's width grows to use the space available in the grid container. The value is applied for the sm breakpoint and wider screens if not overridden.
-spacing	Array<number
-| string>
-| number
-| object
-| string	0	
+`spacing`|	Array<number
+, string>
+, number
+, object
+, string|	0	|
 Defines the space between the type item components. It can only be used on a type container component.
-sx	Array<func
-| object
-| bool>
-| func
-| object		
-wrap	'nowrap'
-| 'wrap-reverse'
-| 'wrap'	'wrap'	
-Defines the flex-wrap style property. It's applied for all screen sizes.
-xl	'auto'
-| number
-| bool	false	
-If a number, it sets the number of columns the grid item uses. It can't be greater than the total number of columns of the container (12 by default). If 'auto', the grid item's width matches its content. If false, the prop is ignored. If true, the grid item's width grows to use the space available in the grid container. The value is applied for the xl breakpoint and wider screens if not overridden.
-xs	'auto'
-| number
-| bool	false	
-If a number, it sets the number of columns the grid item uses. It can't be greater than the total number of columns of the container (12 by default). If 'auto', the grid item's width matches its content. If false, the prop is ignored. If true, the grid item's width grows to use the space available in the grid container. The value is applied for all the screen sizes with the lowest priority.
-zeroMinWidth	bool	false	
 
 
 ## License
