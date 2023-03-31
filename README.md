@@ -306,6 +306,51 @@ Name|	Type	|Default	|Description
 `spacing`|	Array<number, string>, number, object, string|	0	|Defines the space between the type item components. It can only be used on a type container component.
 
 
+## SearchTextBox 
+```jsx
+import {
+  ZTextBoxSearch,
+  ZGrid
+} from 'react-zoi-common-components'
+import { useState } from 'react';
+function SearchBoxSample() {
+const [search,setSearch]=useState('')
+const [data,setData]=useState(["Siva","Ram","Dhanush"])
+  const handleSearch=(e)=>{
+    setSearch(e)
+    // here you will get the search value using that need to filter your data
+    var fileterData= data.filter(value => value.toLowerCase().includes(e.toLowerCase()) == true)
+    setData(fileterData)  
+    console.log(data)  
+  }
+  return (
+    <div>
+      <div >
+          <ZGrid container spacing={2} >
+            <ZGrid item xs={12} >
+                 <ZTextBoxSearch
+                  placeholder={"Search..."} 
+                  value={search} 
+                  onChange={(value) => handleSearch(value.target.value)}
+                 />
+              </ZGrid>
+          </ZGrid>
+      
+      </div>
+    </div>
+  );
+}
+
+export default SearchBoxSample;
+```
+`Property`
+Prop Name | Type | Default | Description
+--- | --- | --- | ---
+`classes` | object | | Override or extend the styles applied to the component.
+`value` | number | 0 | The value of search on change of text box
+`placeholder` | string |  | which place holder need to show in text box
+
+
 ## License
 
 
