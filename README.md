@@ -347,7 +347,7 @@ export default SearchBoxSample;
 Prop Name | Type | Default | Description
 --- | --- | --- | ---
 `classes` | object | | Override or extend the styles applied to the component.
-`value` | number | 0 | The value of search on change of text box
+`value` | number |  | The value of search on change of text box
 `placeholder` | string |  | which place holder need to show in text box
 
 
